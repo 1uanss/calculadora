@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family= Open+Sans:wght@400;700 & display =swap');
+
+:root {
+    --primary-color: rgb(24, 120, 145);
+    --primary-color-darker: rgb(7, 41, 24, 0.897);
+    --primary-color-action: rgb(50, 109, 124);
+    --second-color: #c4c0c0ab;
+    --second-color-hover: #929090ab;
+}
+
+* {
+    outline: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: var(--primary-color);
+    font-family: 'Open sans', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    max-width: 50rem;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+
+}
+
+form input,
+form label,
+form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form input {
+    font-size: 24px;
+    height: 50px;
+    padding: 0 20px;
+}
+
+form input:focus {
+    outline: 1px solid var(--primary-color);
+}
+
+form button {
+    border: none;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+form button:hover {
+    transition: 1s;
+    background-color: var(--primary-color-darker);
+}
+
+form button:active {
+    transition: 1s;
+    background-color: var(--primary-color-action);
+}
+
+.calculadora {
+    width: 400px;
+}
+
+.display {
+    font-size: 2em;
+    width: 100%;
+    text-align: right;
+}
+
+.btn {
+    width: 100%;
+    height: 40px;
+    font-size: 1em;
+    border: none;
+    background-color: var(--second-color);
+    cursor: pointer;
+}
+
+.btn:hover {
+    transition: 0.1s;
+    background-color: var(--second-color-hover)
+}
+
+.btn:active {
+    transition: 0.1s;
+    background-color: var(--primary-color-action)
+}
+
+.btn-eq {
+    background-color: royalblue;
+}
